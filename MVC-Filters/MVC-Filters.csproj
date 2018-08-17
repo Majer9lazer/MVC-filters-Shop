@@ -199,6 +199,7 @@
       <LastGenOutput>ShopDataBase.Context.cs</LastGenOutput>
       <DependentUpon>ShopDataBase.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\ShopDataBase.edmx.sql" />
     <Content Include="Models\ShopDataBase.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShopDataBase.edmx</DependentUpon>

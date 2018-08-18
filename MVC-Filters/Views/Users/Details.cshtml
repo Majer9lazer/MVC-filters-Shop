@@ -1,0 +1,50 @@
+﻿@model MVC_Filters.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Ip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Ip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfVisiting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfVisiting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PageOfVisiting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PageOfVisiting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.User_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

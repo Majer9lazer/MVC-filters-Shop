@@ -1,14 +1,25 @@
-﻿<!DOCTYPE html>
+﻿@using MVC_Filters.Models
+@model MVC_Filters.Models.ErrorModel
+@{
+  
+}
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Ошибка</title>
 </head>
 <body>
     <hgroup>
-        <h1>Ошибка.</h1>
-        <h2>При обработке запроса произошла ошибка.</h2>
+        @if (Model != null)
+        {
+            <h1>Ошибка. </h1>
+            <h2>При обработке запроса произошла ошибка.</h2>
+            <h5>Дата произошедшей ошибки - @Model.DateOfError</h5>
+            <h4>@Model.Error.ToString()</h4>
+            
+        }
     </hgroup>
 </body>
 </html>

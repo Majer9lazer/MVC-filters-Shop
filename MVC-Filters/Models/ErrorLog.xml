@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<errors>
+  <userErrorLog>
+    <IsAuthenticated>false</IsAuthenticated>
+    <DateOfError>11:39</DateOfError>
+    <Error>System.AccessViolationException: Попытка чтения или записи в защищенную память. Это часто свидетельствует о том, что другая память повреждена.
+   в MVC_Filters.Controllers.HomeController.Index() в C:\Users\user\Source\Repos\MVC-filters-Shop\MVC-Filters\Controllers\HomeController.cs:строка 19
+   в lambda_method(Closure , ControllerBase , Object[] )
+   в System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   в System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c.&lt;BeginInvokeSynchronousActionMethod&gt;b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__11_0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass11_1.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass11_1.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass7_0.&lt;BeginInvokeActionMethodWithFilters&gt;b__1(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_6.&lt;BeginInvokeAction&gt;b__3()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__5(IAsyncResult asyncResult)</Error>
+    <StackTrace>   в MVC_Filters.Controllers.HomeController.Index() в C:\Users\user\Source\Repos\MVC-filters-Shop\MVC-Filters\Controllers\HomeController.cs:строка 19
+   в lambda_method(Closure , ControllerBase , Object[] )
+   в System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   в System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c.&lt;BeginInvokeSynchronousActionMethod&gt;b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__11_0()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass11_1.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass11_1.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass7_0.&lt;BeginInvokeActionMethodWithFilters&gt;b__1(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_6.&lt;BeginInvokeAction&gt;b__3()
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__5(IAsyncResult asyncResult)</StackTrace>
+  </userErrorLog>
+</errors>

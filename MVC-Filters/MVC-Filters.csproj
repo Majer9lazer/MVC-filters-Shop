@@ -153,7 +153,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionFilterAttribute.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Filters\ActionFilterAttribute.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -161,6 +162,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AllTypeExceptionAtrribute.cs" />
+    <Compile Include="Models\ErrorModel.cs" />
     <Compile Include="Models\ShopDataBase.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,9 +185,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\UsersLoging.mdf" />
-    <Content Include="App_Data\UsersLoging_log.ldf">
-      <DependentUpon>UsersLoging.mdf</DependentUpon>
+    <Content Include="App_Data\ShopDb.mdf" />
+    <Content Include="App_Data\ShopDb_log.ldf">
+      <DependentUpon>ShopDb.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -194,6 +197,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\ErrorLog.xml" />
     <Content Include="Models\ShopDataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ShopDataBase.Context.cs</LastGenOutput>
@@ -228,7 +232,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -242,6 +248,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Home\IndexOutOfRangeException.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

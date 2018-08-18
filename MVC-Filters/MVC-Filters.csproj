@@ -53,11 +53,17 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.8\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -154,7 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\UsersController.cs" />
-    <Compile Include="Filters\ActionFilterAttribute.cs" />
+    <Compile Include="Filters\MyOwnActionFilterAttribute.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -197,7 +203,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\ErrorLog.xml" />
+    <Content Include="Models\ErrorLog.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Models\ShopDataBase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ShopDataBase.Context.cs</LastGenOutput>
@@ -254,6 +262,8 @@
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
     <Content Include="Views\Home\IndexOutOfRangeException.cshtml" />
+    <Content Include="Views\Home\ErrorsStatistics.cshtml" />
+    <Content Include="Views\Home\ErrorStatistics_Details.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

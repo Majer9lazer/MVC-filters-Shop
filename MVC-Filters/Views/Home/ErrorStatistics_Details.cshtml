@@ -1,0 +1,63 @@
+﻿@model MVC_Filters.Models.ErrorModel
+
+@{
+    ViewBag.Title = "ErrorStatistics_Details";
+}
+
+<h2>ErrorStatistics_Details</h2>
+
+<div>
+    <h4>ErrorModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAuthenticated)
+        </dt>
+
+        <dd>
+            @Model.IsAuthenticated.ToString()
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfError)
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.DateOfError)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StackTrace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StackTrace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ErrorCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ErrorCode)
+        </dd>
+        <dt>
+            ErrorMessage
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Error)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "ErrorsStatistics")
+</p>

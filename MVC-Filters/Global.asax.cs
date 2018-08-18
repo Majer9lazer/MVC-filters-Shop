@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using MVC_Filters.Models;
 
 namespace MVC_Filters
 {
@@ -13,8 +14,9 @@ namespace MVC_Filters
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-          //  FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             GlobalFilters.Filters.Add(new HandleErrorAttribute());
+         
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }

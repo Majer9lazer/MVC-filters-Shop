@@ -11,9 +11,10 @@ namespace MVC_Filters.Models
         /// <summary>
         /// Зарегестрированный ли пользователь
         /// </summary>
+        public string Id { get; set; } = System.Guid.NewGuid().ToString();
         public bool IsAuthenticated { get; set; }
 
-        public DateTime DateOfError { get; set; }
+        public string DateOfError { get; set; }
         public Exception Error { get; set; }
         public string StackTrace { get; set; }
 

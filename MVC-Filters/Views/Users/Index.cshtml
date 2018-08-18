@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MVC_Filters.Models.User>
+﻿@using MVC_Filters.Models
+@model IEnumerable<MVC_Filters.Models.User>
 
 @{
     ViewBag.Title = "Index";
@@ -6,9 +7,9 @@
 
 <h2>Index</h2>
 
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create")
-</p>
+</p>*@
 <table class="table">
     <tr>
         <th>
@@ -26,26 +27,27 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.User_Ip)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateOfVisiting)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PageOfVisiting)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.User_Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.User_Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.User_Id })
-        </td>
-    </tr>
-}
+    @foreach (User item in Model.OrderByDescending(o => o.DateOfVisiting))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.User_Ip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfVisiting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PageOfVisiting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.User_Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.User_Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.User_Id })
+            </td>
+        </tr>
+    }
 
 </table>
